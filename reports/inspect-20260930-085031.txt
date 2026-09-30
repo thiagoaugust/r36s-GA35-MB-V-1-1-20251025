@@ -1,0 +1,422 @@
+
+==================== IMAGEM ====================
+Arquivo : SISTEMA R36S GA36-MB V1.2-20260416.img
+Tamanho : 2628861440 bytes
+Data    : 2026-09-30T08:50:31-03:00
+Calculando SHA-256 (pode levar ~1 min em /mnt/c)...
+SHA-256 : 550e071d117929ddc373572964bc544c18f03f510a06bda01832089e41eba9ad
+
+==================== TABELA DE PARTIÇÕES (fdisk) ====================
+Disk SISTEMA R36S GA36-MB V1.2-20260416.img: 2.45 GiB, 2628861440 bytes, 5134495 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x815d9b77
+
+Device                                  Boot   Start     End Sectors  Size Id Type
+SISTEMA R36S GA36-MB V1.2-20260416.img1      4956160 5134494  178335 87.1M  c W95 FAT32 (LBA)
+SISTEMA R36S GA36-MB V1.2-20260416.img2 *      73728  335871  262144  128M  6 FAT16
+SISTEMA R36S GA36-MB V1.2-20260416.img3            1 4956160 4956160  2.4G 85 Linux extended
+SISTEMA R36S GA36-MB V1.2-20260416.img5       139264  172031   32768   16M 83 Linux
+SISTEMA R36S GA36-MB V1.2-20260416.img6       172032  237567   65536   32M 83 Linux
+SISTEMA R36S GA36-MB V1.2-20260416.img7       237568 1810431 1572864  768M 83 Linux
+SISTEMA R36S GA36-MB V1.2-20260416.img8      1810432 4956159 3145728  1.5G 83 Linux
+
+Partition table entries are not in disk order.
+
+==================== TABELA DE PARTIÇÕES (parted) ====================
+Model:  (file)
+Disk /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/SISTEMA R36S GA36-MB V1.2-20260416.img: 2507MiB
+Sector size (logical/physical): 512B/512B
+Partition Table: unknown
+Disk Flags: 
+(parted indisponível)
+
+==================== PARTIÇÕES (partx) ====================
+NR   START     END SECTORS  SIZE TYPE NAME
+ 1 4956160 5134494  178335 87.1M  0xc 
+ 2   73728  335871  262144  128M  0x6 
+ 3       1 4956160 4956160  2.4G 0x85 
+ 5  139264  172031   32768   16M 0x83 
+ 6  172032  237567   65536   32M 0x83 
+ 7  237568 1810431 1572864  768M 0x83 
+ 8 1810432 4956159 3145728  1.5G 0x83 
+p1: vfat montada em /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1
+p2: vfat (Volumn) montada em /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2
+p3: sem sistema de arquivos reconhecido (bootloader/raw?) — não montada
+p5: sem sistema de arquivos reconhecido (bootloader/raw?) — não montada
+p6: sem sistema de arquivos reconhecido (bootloader/raw?) — não montada
+p7: vfat (EMUELEC) montada em /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p7
+p8: ext4 montada em /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8
+
+==================== PARTIÇÃO p1 (vfat) ====================
+/dev/loop0       88M   64M   24M  73% /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1
+
+--- Conteúdo da raiz ---
+total 1808
+drwxr-xr-x 114 root           root           16384 Dec 31  1969 .
+drwxrwxrwx   1 thiagorasquino thiagorasquino  4096 Sep 30 08:51 ..
+drwxr-xr-x   2 root           root           16384 Dec 31  1979 .update
+drwxr-xr-x   2 root           root           16384 May 13  2025 3do
+drwxr-xr-x   2 root           root           16384 May 13  2025 BGM
+drwxr-xr-x   2 root           root           16384 Oct 10  2025 System Volume Information
+drwxr-xr-x   2 root           root           16384 May 13  2025 amiga
+drwxr-xr-x   2 root           root           16384 May 13  2025 amigacd32
+drwxr-xr-x   2 root           root           16384 May 13  2025 amstradcpc
+drwxr-xr-x   2 root           root           16384 May 13  2025 amstradgx4000
+drwxr-xr-x   2 root           root           16384 May 13  2025 arcade
+drwxr-xr-x   2 root           root           16384 May 13  2025 atari2600
+drwxr-xr-x   2 root           root           16384 May 13  2025 atari5200
+drwxr-xr-x   2 root           root           16384 May 13  2025 atari7800
+drwxr-xr-x   2 root           root           16384 May 13  2025 atari800
+drwxr-xr-x   2 root           root           16384 May 13  2025 atarijaguar
+drwxr-xr-x   2 root           root           16384 May 13  2025 atarilynx
+drwxr-xr-x   2 root           root           16384 May 13  2025 atarist
+drwxr-xr-x   2 root           root           16384 May 13  2025 atomiswave
+drwxr-xr-x   2 root           root           16384 May 13  2025 bezels
+drwxr-xr-x   4 root           root           16384 May 13  2025 bios
+drwxr-xr-x   2 root           root           16384 May 13  2025 c128
+drwxr-xr-x   2 root           root           16384 May 13  2025 c16
+drwxr-xr-x   2 root           root           16384 May 13  2025 c64
+drwxr-xr-x   2 root           root           16384 May 13  2025 capcom
+drwxr-xr-x   2 root           root           16384 May 13  2025 coleco
+drwxr-xr-x   2 root           root           16384 May 13  2025 cps1
+drwxr-xr-x   2 root           root           16384 May 13  2025 cps2
+drwxr-xr-x   2 root           root           16384 May 13  2025 cps3
+drwxr-xr-x   4 root           root           16384 May 13  2025 daphne
+drwxr-xr-x   2 root           root           16384 May 13  2025 downloads
+drwxr-xr-x   2 root           root           16384 May 13  2025 dreamcast
+drwxr-xr-x   2 root           root           16384 May 13  2025 easyrpg
+drwxr-xr-x   2 root           root           16384 May 13  2025 famicom
+drwxr-xr-x  19 root           root           16384 May 13  2025 fbneo
+drwxr-xr-x   2 root           root           16384 May 13  2025 fds
+drwxr-xr-x   2 root           root           16384 May 13  2025 fmtownsux
+drwxr-xr-x   2 root           root           16384 May 13  2025 freej2me
+drwxr-xr-x   2 root           root           16384 May 13  2025 gameandwatch
+drwxr-xr-x   2 root           root           16384 May 13  2025 gamegear
+drwxr-xr-x   2 root           root           16384 May 13  2025 gamegearh
+drwxr-xr-x   2 root           root           16384 May 13  2025 gb
+drwxr-xr-x   2 root           root           16384 May 13  2025 gba
+drwxr-xr-x   2 root           root           16384 May 13  2025 gbah
+drwxr-xr-x   2 root           root           16384 May 13  2025 gbc
+drwxr-xr-x   2 root           root           16384 May 13  2025 gbch
+drwxr-xr-x   2 root           root           16384 May 13  2025 gbh
+drwxr-xr-x   2 root           root           16384 May 13  2025 genesis
+drwxr-xr-x   2 root           root           16384 May 13  2025 genh
+drwxr-xr-x   2 root           root           16384 May 13  2025 gw
+drwxr-xr-x   2 root           root           16384 May 13  2025 intellivision
+drwxr-xr-x   2 root           root           16384 May 13  2025 mame
+drwxr-xr-x   2 root           root           16384 May 13  2025 mastersystem
+drwxr-xr-x   2 root           root           16384 May 13  2025 megadrive
+drwxr-xr-x   2 root           root           16384 May 13  2025 megadrive-japan
+drwxr-xr-x   2 root           root           16384 May 13  2025 megadrivemsu
+drwxr-xr-x   2 root           root           16384 May 13  2025 megaduck
+drwxr-xr-x   3 root           root           16384 May 13  2025 mplayer
+drwxr-xr-x   2 root           root           16384 May 13  2025 msx
+drwxr-xr-x   2 root           root           16384 May 13  2025 msx2
+drwxr-xr-x   2 root           root           16384 May 13  2025 n64
+drwxr-xr-x   2 root           root           16384 May 13  2025 naomi
+drwxr-xr-x   2 root           root           16384 May 13  2025 nds
+drwxr-xr-x   2 root           root           16384 May 13  2025 neocd
+drwxr-xr-x   2 root           root           16384 May 13  2025 neogeo
+drwxr-xr-x   3 root           root           16384 Aug 22  2025 nes
+drwxr-xr-x   2 root           root           16384 May 13  2025 nesh
+drwxr-xr-x   2 root           root           16384 May 13  2025 ngp
+drwxr-xr-x   2 root           root           16384 May 13  2025 ngpc
+drwxr-xr-x   2 root           root           16384 May 13  2025 odyssey
+drwxr-xr-x   2 root           root           16384 May 13  2025 openbor
+drwxr-xr-x   2 root           root           16384 May 13  2025 pc
+drwxr-xr-x   2 root           root           16384 May 13  2025 pc98
+drwxr-xr-x   2 root           root           16384 May 13  2025 pcengine
+drwxr-xr-x   2 root           root           16384 May 13  2025 pcenginecd
+drwxr-xr-x   2 root           root           16384 May 13  2025 pcfx
+drwxr-xr-x   2 root           root           16384 May 13  2025 pgm2
+drwxr-xr-x   2 root           root           16384 May 13  2025 pico-8
+drwxr-xr-x   2 root           root           16384 May 13  2025 pokemini
+drwxr-xr-x  35 root           root           16384 May 13  2025 ports
+drwxr-xr-x   2 root           root           16384 May 13  2025 ports_scripts
+drwxr-xr-x   2 root           root           16384 May 13  2025 psp
+drwxr-xr-x   2 root           root           16384 May 13  2025 pspminis
+drwxr-xr-x   3 root           root           16384 May 13  2025 psx
+drwxr-xr-x   2 root           root           16384 May 13  2025 saturn
+drwxr-xr-x   2 root           root           16384 May 13  2025 savestates
+drwxr-xr-x   2 root           root           16384 May 13  2025 sc-3000
+drwxr-xr-x   2 root           root           16384 May 13  2025 screenshots
+drwxr-xr-x   2 root           root           16384 May 13  2025 scummvm
+drwxr-xr-x   2 root           root           16384 May 13  2025 sega32x
+drwxr-xr-x   2 root           root           16384 May 13  2025 segacd
+drwxr-xr-x   2 root           root           16384 May 13  2025 sfc
+drwxr-xr-x   2 root           root           16384 May 13  2025 sg-1000
+drwxr-xr-x   2 root           root           16384 May 13  2025 sgfx
+drwxr-xr-x   2 root           root           16384 May 13  2025 snes
+drwxr-xr-x   2 root           root           16384 May 13  2025 snesh
+drwxr-xr-x   2 root           root           16384 May 13  2025 snesmsu1
+drwxr-xr-x   2 root           root           16384 May 13  2025 solarus
+drwxr-xr-x   2 root           root           16384 May 13  2025 splash
+drwxr-xr-x   2 root           root           16384 May 13  2025 supervision
+drwxr-xr-x   2 root           root           16384 May 13  2025 tg16
+drwxr-xr-x   2 root           root           16384 May 13  2025 tg16cd
+drwxr-xr-x   2 root           root           16384 May 13  2025 tic-80
+drwxr-xr-x   2 root           root           16384 May 13  2025 uzebox
+drwxr-xr-x   2 root           root           16384 May 13  2025 vectrex
+drwxr-xr-x   2 root           root           16384 May 13  2025 vic20
+drwxr-xr-x   2 root           root           16384 May 13  2025 videopac
+drwxr-xr-x   2 root           root           16384 May 13  2025 virtualboy
+drwxr-xr-x   2 root           root           16384 May 13  2025 wonderswan
+drwxr-xr-x   2 root           root           16384 May 13  2025 wonderswancolor
+drwxr-xr-x   2 root           root           16384 May 13  2025 x1
+drwxr-xr-x   2 root           root           16384 May 13  2025 x68000
+drwxr-xr-x   2 root           root           16384 May 13  2025 zx81
+drwxr-xr-x   2 root           root           16384 May 13  2025 zxspectrum
+
+--- Arquivos de boot (dtb, kernel, ini, extlinux, uEnv) ---
+
+--- EmulationStation / RetroArch / temas / PortMaster ---
+
+--- Diretórios de primeiro nível (tamanho) ---
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/splash
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/supervision
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/tg16
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/tg16cd
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/tic-80
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/uzebox
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/vectrex
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/vic20
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/videopac
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/virtualboy
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/wonderswan
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/wonderswancolor
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/x1
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/x68000
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/zx81
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/zxspectrum
+32K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/mplayer
+32K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/psx
+48K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/System Volume Information
+48K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/daphne
+96K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/bios
+288K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/fbneo
+592K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/ports
+672K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/bezels
+60M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p1/nes
+
+==================== PARTIÇÃO p2 (vfat label=Volumn) ====================
+/dev/loop1      128M   15M  113M  12% /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2
+
+--- Conteúdo da raiz ---
+total 1612
+drwxr-xr-x 4 root           root            16384 Dec 31  1969 .
+drwxrwxrwx 1 thiagorasquino thiagorasquino   4096 Sep 30 08:51 ..
+drwxr-xr-x 2 root           root             2048 Oct 10  2025 System Volume Information
+drwxr-xr-x 2 root           root             2048 Dec 31  1979 bat
+-rwxr-xr-x 1 root           root           921654 Dec 31  1979 bootlogo.bmp
+-rwxr-xr-x 1 root           root           344813 Dec 31  1979 font24.sft
+-rwxr-xr-x 1 root           root           357443 Dec 31  1979 font32.sft
+-rwxr-xr-x 1 root           root              512 Dec 31  1979 magic.bin
+
+--- Arquivos de boot (dtb, kernel, ini, extlinux, uEnv) ---
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bootlogo.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat6.bmp
+    921656  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat5.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat8.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/battery.bmp
+    921656  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat9.bmp
+    921656  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat7.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat2.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat10.bmp
+    921656  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat1.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/low_pwr.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/battery_charge.bmp
+    921656  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat3.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bempty.bmp
+    921656  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat4.bmp
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat/bat0.bmp
+
+--- EmulationStation / RetroArch / temas / PortMaster ---
+
+--- Diretórios de primeiro nível (tamanho) ---
+2.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/magic.bin
+6.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/System Volume Information
+338K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/font24.sft
+350K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/font32.sft
+902K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bootlogo.bmp
+14M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p2/bat
+
+==================== PARTIÇÃO p7 (vfat label=EMUELEC) ====================
+/dev/loop5      768M  407M  362M  53% /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p7
+
+--- Conteúdo da raiz ---
+total 416416
+drwxr-xr-x 2 root           root               16384 Dec 31  1969 .
+drwxrwxrwx 1 thiagorasquino thiagorasquino      4096 Sep 30 08:51 ..
+-rwxr-xr-x 1 root           root           425447424 Aug 22  2025 SYSTEM
+-rwxr-xr-x 1 root           root              921654 Aug 22  2025 low_pwr.bmp
+
+--- Arquivos de boot (dtb, kernel, ini, extlinux, uEnv) ---
+    921654  /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p7/low_pwr.bmp
+
+--- EmulationStation / RetroArch / temas / PortMaster ---
+
+--- Diretórios de primeiro nível (tamanho) ---
+912K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p7/low_pwr.bmp
+406M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p7/SYSTEM
+
+==================== PARTIÇÃO p8 (ext4) ====================
+/dev/loop6      1.5G  817M  567M  60% /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8
+
+--- Conteúdo da raiz ---
+total 112
+drwxr-xr-x 21 root           root            4096 Jan  8  1970 .
+drwxrwxrwx  1 thiagorasquino thiagorasquino  4096 Sep 30 08:51 ..
+drwxr-xr-x 11 root           root            4096 May 13  2025 .cache
+drwxr-xr-x 29 root           root            4096 May 13  2025 .config
+lrwxrwxrwx  1 root           root              33 May 13  2025 .emulationstation -> /storage/.config/emulationstation
+drwxr-xr-x  9 root           root            4096 May 13  2025 .tmp
+drwxr-xr-x  2 root           root            4096 Feb  7  1970 .update
+drwxrwxr-x 10 root           root            4096 Mar 21  2025 assets
+drwxr-xr-x  2 root           root            4096 May 13  2025 backup
+drwxrwxr-x  2 root           root           20480 Aug 22  2025 cores
+drwxrwxr-x  3 root           root            4096 Aug 18  2025 database
+-rw-r--r--  1 root           root             148 Jan  8  1970 init.log
+drwxrwxr-x  2 root           root            4096 Aug 22  2025 joypads
+drwx------  2 root           root           16384 May 13  2025 lost+found
+drwxrwxr-x  6 root           root            4096 Aug 22  2025 overlays
+drwxrwxrwx  3 root           root            4096 May 13  2025 playlists
+drwxrwxrwx  2 root           root            4096 May 13  2025 remappings
+drwxr-xr-x  2 root           root            4096 Feb  7  1970 roms
+drwxrwxrwx  2 root           root            4096 May 13  2025 savefiles
+drwxrwxrwx  2 root           root            4096 May 13  2025 savestates
+drwxrwxr-x  6 root           root            4096 Aug 18  2025 shaders
+drwxrwxrwx  2 root           root            4096 May 13  2025 system
+drwxrwxrwx  2 root           root            4096 May 13  2025 thumbnails
+
+--- Arquivos de boot (dtb, kernel, ini, extlinux, uEnv) ---
+
+--- EmulationStation / RetroArch / temas / PortMaster ---
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/cap32_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_x64sc_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/same_cdi_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_x128_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_x64dtv_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/neocd_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/atari800_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/pocketcdg_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/genesis_plus_gx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/easyrpg_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_x64_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/uzem_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/parallel_n64_32b_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/puae_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vbam_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_ngp_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/prboom_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_xplus4_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_pcfx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/daphne_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_pce_fast_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mgba_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gearcoleco_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/prosystem_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/ppsspp_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_xpet_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/stella_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_wswan_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/a5200_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/tic80_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_xscpu64_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fceumm_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/nestopia_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/spring_ppsspp_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_xcbm5x0_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_xvic_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fmsx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/hatari_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/sameduck_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/81_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/px68k_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fceumm_mod_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_lynx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/flycast_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/potator_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/snes9x_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vice_xcbm2_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gme_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/picodrive_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/np2kai_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/dinothawr_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/handy_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gpsp_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/reminiscence_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mupen64plus_32b_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_vb_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mame2003_plus_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/spring_shell_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fbneo_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/spring_pcsx_rearmed32_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gw_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fuse_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/uae4arm_32b_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/snes9x2005_plus_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/sameboy_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vba_next_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/genesis_plus_gx_wide_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/xrick_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gearsystem_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mednafen_supergrafx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/pokemini_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/cannonball_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/dosbox_svn_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/snes9x2002_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/nekop2_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mrboom_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/bash_launcher_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gearboy_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/vecx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/gambatte_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/tgbdual_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/bluemsx_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/quasi88_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/2048_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/snes9x2010_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/opera_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/freej2me_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/nxengine_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fake08_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/mame2010_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/x1_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/tyrquake_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/pcsx_rearmed_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/freeintv_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/nestopiaCV_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/fbalpha2012_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores/o2em_libretro.so
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/retroarch/retroarch.cfg
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/emuelec/themes
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/ppsspp/assets/themes
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/emulationstation
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/emulationstation/es_systems.cfg
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/emulationstation/themes
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/emulationstation/es_input.cfg
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/.config/emulationstation/es_settings.cfg
+
+--- Diretórios de primeiro nível (tamanho) ---
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/backup
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/init.log
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/remappings
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/roms
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/savefiles
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/savestates
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/system
+4.0K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/thumbnails
+16K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/lost+found
+28K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/database
+64K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/playlists
+88K	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/joypads
+1.7M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/overlays
+9.2M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/shaders
+58M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/assets
+334M	/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt/p8/cores
+
+==================== FIM ====================
+Relatório salvo em: /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/reports/inspect-20260930-085031.txt

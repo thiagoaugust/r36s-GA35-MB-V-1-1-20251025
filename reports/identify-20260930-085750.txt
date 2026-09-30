@@ -1,0 +1,338 @@
+
+==================== IMAGEM ====================
+Arquivo: SISTEMA R36S GA36-MB V1.2-20260416.img
+Data   : 2026-09-30T08:57:50-03:00
+
+==================== ÁREA DE BOOTLOADER (setor 0 até início da p2) ====================
+Arquivo  : /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/raw/bootloader.bin (37748736 bytes)
+file     : DOS/MBR boot sector MS-MBR Windows 7 english at offset 0x163 "Invalid partition table" at offset 0x17b "Error loading operating system" at offset 0x19a "Missing operating system", disk signature 0x815d9b77; partition 1 : ID=0xc, start-CHS (0x134,129,14), end-CHS (0x13f,154,58), startsector 4956160, 178335 sectors; partition 2 : ID=0x6, active, start-CHS (0x4,150,19), end-CHS (0x14,231,19), startsector 73728, 262144 sectors; partition 3 : ID=0x85, start-CHS (0x0,0,2), end-CHS (0x134,129,14), startsector 1, 4956160 sectors
+Cabeçalho (64 bytes):
+000000 33 c0 8e d0 bc 00 7c 8e c0 8e d8 be 00 7c bf 00  >3.....|......|..<
+000010 06 b9 00 02 fc f3 a4 50 68 1c 06 cb fb b9 04 00  >.......Ph.......<
+000020 bd be 07 80 7e 00 00 7c 0b 0f 85 0e 01 83 c5 10  >....~..|........<
+000030 e2 f1 cd 18 88 56 00 55 c6 46 11 05 c6 46 10 00  >.....V.U.F...F..<
+000040
+
+Assinaturas conhecidas encontradas (offset: nome):
+  0x01320dd8: Android boot image (kernel+ramdisk)
+
+Quantidade de DTBs (magic d00dfeed):
+0
+
+Pistas de SoC / placa / versão (strings):
+      1 U-Boot 2017.09-g05bceb2-dirty
+
+==================== PARTIÇÃO p5 (raw) ====================
+Início: setor 139264 | Tamanho: 32768 setores (16 MiB)
+Arquivo  : /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/raw/p5.bin (16777216 bytes)
+file     : data
+Cabeçalho (64 bytes):
+000000 ed 18 ab b5 62 6f 6f 74 64 65 6c 61 79 3d 30 00  >....bootdelay=0.<
+000010 62 6f 6f 74 63 6d 64 3d 72 75 6e 20 73 65 74 61  >bootcmd=run seta<
+000020 72 67 73 5f 6d 6d 63 20 62 6f 6f 74 5f 6e 6f 72  >rgs_mmc boot_nor<
+000030 6d 61 6c 00 63 6f 6e 73 6f 6c 65 3d 74 74 79 53  >mal.console=ttyS<
+000040
+
+Assinaturas conhecidas encontradas (offset: nome):
+  (nenhuma)
+
+Quantidade de DTBs (magic d00dfeed):
+0
+
+Pistas de SoC / placa / versão (strings):
+
+==================== PARTIÇÃO p6 (raw) ====================
+Início: setor 172032 | Tamanho: 65536 setores (32 MiB)
+Arquivo  : /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/raw/p6.bin (33554432 bytes)
+file     : Android bootimg, kernel (0x40008000), ramdisk (0x41000000), page size: 2048
+Cabeçalho (64 bytes):
+000000 41 4e 44 52 4f 49 44 21 98 a0 c9 00 00 80 00 40  >ANDROID!.......@<
+000010 88 66 2e 00 00 00 00 41 00 00 00 00 00 00 f0 40  >.f.....A.......@<
+000020 00 01 00 40 00 08 00 00 00 00 00 00 00 00 00 00  >...@............<
+000030 73 75 6e 38 69 00 00 00 00 00 00 00 00 00 00 00  >sun8i...........<
+000040
+
+Assinaturas conhecidas encontradas (offset: nome):
+  0x00000000: Android boot image (kernel+ramdisk)
+  0x001a81d4: SquashFS
+  0x001a8a38: SquashFS
+
+Quantidade de DTBs (magic d00dfeed):
+0
+
+Pistas de SoC / placa / versão (strings):
+      1 Linux version 3.4.39
+
+==================== p7 (EMUELEC) → arquivo SYSTEM ====================
+total 416416
+drwxr-xr-x 2 root           root               16384 Dec 31  1969 .
+drwxrwxrwx 1 thiagorasquino thiagorasquino      4096 Sep 30 08:59 ..
+-rwxr-xr-x 1 root           root           425447424 Aug 22  2025 SYSTEM
+-rwxr-xr-x 1 root           root              921654 Aug 22  2025 low_pwr.bmp
+
+file SYSTEM: Squashfs filesystem, little endian, version 4.0, lzo compressed, 425447076 bytes, 12276 inodes, blocksize: 524288 bytes, created: Fri Aug 22 12:45:39 2025
+
+Found a valid SQUASHFS 4:0 superblock on /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt2/p7/SYSTEM.
+Creation or last append time Fri Aug 22 09:45:39 2025
+Filesystem size 425447076 bytes (415475.66 Kbytes / 405.74 Mbytes)
+Compression lzo
+	algorithm lzo1x_999
+	compression level 9
+Block size 524288
+Filesystem is exportable via NFS
+Inodes are compressed
+Data is compressed
+Uids/Gids (Id table) are compressed
+Fragments are compressed
+Tailends are not packed into fragments
+Xattrs are not stored
+Duplicates are removed
+Number of fragments 424
+Number of inodes 12276
+Number of ids 2
+
+--- etc/os-release ---
+NAME="EmuELEC"
+VERSION="4.7-Nexus_devel_20250822204445"
+ID="emuelec"
+VERSION_ID="4.7"
+PRETTY_NAME="EmuELEC (Community - EmuELEC is FREE! NOT FOR SALE!): 4.7-Nexus_devel_20250822204445"
+HOME_URL="https://emuelec.org"
+BUG_REPORT_URL="git@192.168.0.55:emuelec/emuelec"
+BUILD_ID="821dd42b865cfcace883d5fb5c951252afb25949"
+LIBREELEC_ARCH="OdroidGoAdvance.aarch64"
+LIBREELEC_BUILD="Community - EmuELEC is FREE! NOT FOR SALE!"
+LIBREELEC_PROJECT="Allwinner"
+COREELEC_ARCH="OdroidGoAdvance.aarch64"
+COREELEC_BUILD="Community - EmuELEC is FREE! NOT FOR SALE!"
+COREELEC_PROJECT="Allwinner"
+COREELEC_DEVICE="A33"
+--- etc/release ---
+OdroidGoAdvance.aarch64-4.7-Nexus_devel_20250822204445
+--- usr/config/EE_VERSION ---
+4.7
+--- Módulos de kernel (lib/modules) ---
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt2/system/lib/modules:
+6.18.40.1-microsoft-standard-WSL2
+
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt2/system/usr/lib/modules:
+cdc_ether.ko
+disp.ko
+gpio-sunxi.ko
+lcd.ko
+mali.ko
+meig_cdc_driver.ko
+udt_joystick.ko
+--- Raiz do SYSTEM ---
+total 0
+drwxrwxr-x 12 root           root            263 Aug 22  2025 .
+drwxrwxrwx  1 thiagorasquino thiagorasquino 4096 Sep 30 08:59 ..
+lrwxrwxrwx  1 root           root              8 Aug 22  2025 bin -> /usr/bin
+drwxrwxr-x  2 root           root              3 Aug 22  2025 dev
+-rw-rw-r--  1 root           root              4 Aug 18  2025 ee_arch
+lrwxrwxrwx  1 root           root             24 Aug 18  2025 emuelec -> /storage/.config/emuelec
+drwxrwxr-x 20 root           root           1097 Aug 22  2025 etc
+drwxrwxr-x  2 root           root              3 Aug 22  2025 flash
+lrwxrwxrwx  1 root           root              8 Aug 22  2025 lib -> /usr/lib
+lrwxrwxrwx  1 root           root             10 Aug 22  2025 media -> /var/media
+lrwxrwxrwx  1 root           root             30 Aug 18  2025 portmaster -> /storage/roms/ports/portmaster
+drwxrwxr-x  2 root           root              3 Aug 22  2025 proc
+lrwxrwxrwx  1 root           root             13 Aug 22  2025 roms -> /storage/roms
+drwxrwxr-x  2 root           root              3 Aug 22  2025 run
+lrwxrwxrwx  1 root           root              9 Aug 22  2025 sbin -> /usr/sbin
+drwxrwxr-x  2 root           root              3 Aug 22  2025 storage
+drwxrwxr-x  2 root           root              3 Aug 22  2025 sys
+drwxrwxr-x  2 root           root              3 Aug 22  2025 tmp
+drwxrwxr-x 10 root           root            190 Aug 22  2025 usr
+drwxrwxr-x  2 root           root              3 Aug 22  2025 var
+--- usr/config (padrões copiados p/ /storage) ---
+EE_VERSION
+SDL-GameControllerDB
+amiberry
+asound.conf
+asound.conf-Rockchip
+asound.conf-amlogic
+asound.conf-amlogic-ng
+autostart.sh
+custom_start.sh
+emuelec
+emulationstation
+hatari
+hosts.conf
+hwdb.d
+iptables
+logind.conf.d
+mc
+modprobe.d
+modules-load.d
+ppsspp
+profile.d
+pulse-daemon.conf.d
+rc_keymaps
+rc_maps.cfg.sample
+rclone
+retroarch
+samba.conf.sample
+skyscraper
+sleep.conf.d
+splash
+sysctl.d
+system.d
+timesyncd.conf.d
+tmpfiles.d
+udev.rules.d
+vlc
+--- Binários de emuladores/frontend em usr/bin (filtrado) ---
+PPSSPPSDL
+amiberry
+amiberry.start
+emulationstation
+flycast
+flycast.sh
+ppsspp.sh
+retroarch
+set_flycast_joy.sh
+set_ppsspp_joy.sh
+--- Scripts de inicialização (usr/lib/systemd/system, filtrado) ---
+dbus-org.freedesktop.hostname1.service
+dbus-org.freedesktop.login1.service
+dbus-org.freedesktop.timesync1.service
+emuelec-autostart.service
+emuelec-disable_small_cores.service
+emuelec.target
+emuelec.target.wants
+emustation.service
+factory-reset.target
+fs-resize.service
+fs-resize.target
+iptables.service
+kmod-static-nodes.service
+rescue.service
+rescue.target
+rescue.target.wants
+retroarch.service
+samba-config.service
+slices.target
+storage-log.service
+storage.mount.d
+systemd-boot-check-no-failures.service
+systemd-modules-load.service
+systemd-timesyncd-setup.service
+systemd-timesyncd.service
+systemd-timesyncd.service.d
+systemd-tmpfiles-clean.service
+systemd-tmpfiles-clean.timer
+systemd-tmpfiles-setup-dev.service
+systemd-tmpfiles-setup.service
+tmp-cores.mount
+udt-headphones.service
+--- DTBs dentro do SYSTEM ---
+
+==================== p8 (/storage do EmuELEC) ====================
+--- init.log ---
+fsck: fsck.auto: No such file or directory
+fsck: fsck.auto: No such file or directory
+mount: mounting /run on /sysroot/run failed: Invalid argument
+--- .config ---
+EE_VERSION
+SDL-GameControllerDB
+amiberry
+asound.conf
+asound.conf-Rockchip
+asound.conf-amlogic
+asound.conf-amlogic-ng
+autostart.sh
+custom_start.sh
+emuelec
+emulationstation
+hatari
+hosts.conf
+hwdb.d
+iptables
+logind.conf.d
+mc
+modprobe.d
+modules-load.d
+mpv
+ppsspp
+profile.d
+pulse
+pulse-daemon.conf.d
+rc_keymaps
+rc_maps.cfg.sample
+rclone
+retroarch
+samba.conf.sample
+skyscraper
+sleep.conf.d
+splash
+sysctl.d
+system.d
+timesyncd.conf.d
+tmpfiles.d
+udev.rules.d
+vlc
+--- emuelec.conf (principais chaves) ---
+ee_ssh.enabled=1
+ee_bluetooth.enabled=0
+global.maxperf=1
+ee_bootvideo.enabled=0
+ee_randombootvideo.enabled=0
+ee_videomode=1080p60hz
+ee_boot=Emulationstation
+global.showFPS=0
+global.bezel=0
+ee_splash.enabled=1
+ee_mount.retry=1
+ee_audio_device=spk
+advmame_auto_gamepad=1
+dolphin_auto_gamepad=1
+flycast_auto_gamepad=1
+mupen64plus_auto_gamepad=1
+advmame_invert_axis=0
+advmame_joy_remap=1
+brightness.level=80
+system.hostname=UDT
+wifi.enabled=0
+audio.device=auto
+audio.volume=29
+audio.bgmusic=1
+controllers.bluetooth.enabled=1
+system.language=es_MX
+system.timezone=America/Mexico_City
+updates.enabled=1
+updates.type=stable
+global.ratio=4/3
+global.smooth=1
+global.runahead=0
+global.secondinstance=0
+global.retroachievements=0
+global.retroachievements.hardcore=0
+global.retroachievements.leaderboards=0
+global.retroachievements.verbose=0
+global.retroachievements.screenshot=0
+global.retroachievements.username=
+global.retroachievements.password=
+audio.display_titles=1
+audio.display_titles_time=10
+audio.persystem=0
+bl_rgb=loop
+boardType=g80
+system.version=GA36-UDT-EE-TF-R-20250818
+ScrollLoadMedias=0
+--- Temas do EmulationStation ---
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt2/p8/.config/emuelec/themes:
+
+/mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/work/mnt2/p8/.config/emulationstation/themes:
+NES-BOX
+
+==================== ARQUIVOS BRUTOS SALVOS ====================
+total 86016
+drwxrwxrwx 1 thiagorasquino thiagorasquino     4096 Sep 30 08:58 .
+drwxrwxrwx 1 thiagorasquino thiagorasquino     4096 Sep 30 08:57 ..
+-rwxrwxrwx 1 thiagorasquino thiagorasquino 37748736 Sep 30 08:58 bootloader.bin
+-rwxrwxrwx 1 thiagorasquino thiagorasquino 16777216 Sep 30 08:58 p5.bin
+-rwxrwxrwx 1 thiagorasquino thiagorasquino 33554432 Sep 30 08:59 p6.bin
+
+==================== FIM ====================
+Relatório salvo em: /mnt/c/Users/Pichau/dev-workspace/r36s-GA35-MB-V-1-1-20251025/reports/identify-20260930-085750.txt

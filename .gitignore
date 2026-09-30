@@ -1,0 +1,12 @@
+# Imagens de sistema: grandes demais e podem conter ROMs/BIOS protegidos
+*.img
+*.img.xz
+*.img.gz
+*.img.zip
+*.7z
+*.zip
+
+# Área de trabalho local (pontos de montagem, extrações, builds)
+work/
+build/
+out/

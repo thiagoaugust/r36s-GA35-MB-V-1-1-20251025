@@ -1,0 +1,5 @@
+# Scripts precisam de LF para rodar no WSL/Linux (CRLF quebra o bash)
+*.sh   text eol=lf
+*.cfg  text eol=lf
+*.conf text eol=lf
+*.ini  text eol=lf
