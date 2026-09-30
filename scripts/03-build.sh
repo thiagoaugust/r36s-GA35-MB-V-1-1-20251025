@@ -202,6 +202,21 @@ if [[ -d "$CUSTOM/overlay/p8" ]]; then
   (cd "$CUSTOM/overlay/p8" && find . -name '*.sh') | while read -r f; do chmod 755 "$MNT/p8/$f"; done
 fi
 
+# Sistemas extras: acrescentados DENTRO do es_systems.cfg. Não usar es_systems_custom.cfg:
+# este ES lê só o primeiro que existir (custom > es_systems.cfg) e sumiria com os 106 de fábrica.
+if [[ -f "$CUSTOM/es_systems_extra.cfg" ]]; then
+  ESCFG="$MNT/p8/.config/emulationstation/es_systems.cfg"
+  for s in $(tr -d '\r' < "$CUSTOM/es_systems_extra.cfg" | sed -n 's|.*<name>\(.*\)</name>.*|\1|p'); do
+    grep -q "<name>$s</name>" "$ESCFG" && { echo "Sistema '$s' já existe no es_systems.cfg" >&2; exit 1; }
+  done
+  tmp="$(mktemp)"
+  { sed '/<\/systemList>/,$d' "$ESCFG"
+    tr -d '\r' < "$CUSTOM/es_systems_extra.cfg" | sed -n '/<systemList>/,/<\/systemList>/p' | sed '1d;$d'
+    echo '</systemList>'; } > "$tmp"
+  cat "$tmp" > "$ESCFG"; rm -f "$tmp"
+  echo "  es_systems.cfg: $(grep -c '<system>' "$ESCFG") sistemas (com os de custom/es_systems_extra.cfg)"
+fi
+
 echo
 echo "  Diferença no emuelec.conf:"
 diff -u --label emuelec.conf.fabrica --label emuelec.conf.custom "$ORIG_COPY" "$CONF" | sed 's/^/    /' || true
@@ -237,10 +252,11 @@ else
   (( n == P1_NEW )) || { echo "Falha ao atualizar a MBR (p1 = $n setores)" >&2; exit 1; }
 
   # Recria o FAT32 no novo tamanho (mesmo serial) e devolve o conteúdo de fábrica.
+  # -h: início da partição no disco (como no FAT de fábrica; com 0 o Windows não deu letra à p1).
   # O EmuELEC monta a p1 por dispositivo (/dev/mmcblk0p1), não por UUID/label.
   L1S="$(attach_part "$SRC" 1 --read-only)"
   L1="$(attach_part "$OUT" 1)"
-  mkfs.vfat -F 32 -i "$(blkid -s UUID -o value "$L1S" | tr -d -)" "$L1" >/dev/null
+  mkfs.vfat -F 32 -h "$P1_START" -i "$(blkid -s UUID -o value "$L1S" | tr -d -)" "$L1" >/dev/null
   mkdir -p "$MNT/p1src" "$MNT/p1"
   mount -t vfat -o ro,utf8 "$L1S" "$MNT/p1src"
   mount -t vfat -o utf8 "$L1" "$MNT/p1"

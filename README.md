@@ -74,7 +74,7 @@ bash scripts/fetch-freeware.sh
 Baixa do Content Downloader oficial da libretro (com conferência de SHA-256) Doom e Quake shareware,
 Cave Story, Dinothawr, Rick Dangerous e Wolfenstein 3D shareware para `work/freeware/`. Se essa pasta existir,
 o `03-build.sh` copia o conteúdo para a p1. Os menus de Quake, Cave Story, Dinothawr e Rick Dangerous vêm de
-`custom/overlay/p8/.config/emulationstation/es_systems_custom.cfg`; o Doom passa a usar o núcleo `prboom`
+`custom/es_systems_extra.cfg` (acrescentado ao `es_systems.cfg` no build); o Doom passa a usar o núcleo `prboom`
 (`custom/emuelec.conf.d/20-doom-prboom.conf`), já que o Chocolate-Doom padrão não existe nesta imagem.
 
 ### Com ROMs

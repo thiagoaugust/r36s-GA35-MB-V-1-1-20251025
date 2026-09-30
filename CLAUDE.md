@@ -83,7 +83,7 @@ Projeto para **desmontar, customizar e remontar** a imagem de sistema de um cons
 - [x] Build com as ROMs reais (2026-09-30) — a distro WSL do usuário é `Ubuntu` (não a padrão
       `Ubuntu-20.04`); precisou de `apt install dosfstools`
 - [x] Jogos gratuitos: `scripts/fetch-freeware.sh` → `work/freeware/` → p1; menus extras em
-      `es_systems_custom.cfg` (overlay p8); Doom via `prboom.emulator/core` no emuelec.conf — testado só no build
+      `custom/es_systems_extra.cfg` (inserido no `es_systems.cfg`; **nunca** usar `es_systems_custom.cfg`: este ES lê só ele e esconde os de fábrica); Doom via `prboom.emulator/core` no emuelec.conf — testado só no build
 - [ ] **Gravar a imagem com ROMs + beep + gratuitos e validar no console** (jogos listados, beep audível,
       Doom/Quake/Cave Story/Dinothawr/Rick/Wolf3D abrindo)
 - [x] Logo de boot próprio via `custom/logo/` — testado só no build
