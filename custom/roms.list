@@ -1,0 +1,9 @@
+# roms.list — Sistemas copiados da pasta passada em --roms para a p1 (/storage/roms)
+# Um nome por linha = nome da pasta no es_systems.cfg (ex.: gbc, gamegear, psx).
+gb
+gbc
+gba
+megadrive
+neogeo
+nes
+snes

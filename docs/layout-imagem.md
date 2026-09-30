@@ -31,7 +31,7 @@ Tamanho: 2.628.861.440 bytes (5.134.495 setores de 512 B) — tabela MBR (`0x815
 | p6 | 172.032 – 237.567 | 32 MiB | raw | — | **Boot**: Android bootimg (kernel 3.4.39 + ramdisk/initramfs) |
 | p7 | 237.568 – 1.810.431 | 768 MiB | FAT32 | `EMUELEC` | `SYSTEM` (squashfs do SO, 406 MiB) + `low_pwr.bmp` |
 | p8 | 1.810.432 – 4.956.159 | 1,5 GiB | ext4 | — | `/storage`: `.config/` (emuelec, emulationstation, retroarch…), `cores/`, `assets`, `shaders`, `overlays` |
-| p1 | 4.956.160 – 5.134.494 | 87 MiB | FAT32 | — | ROMs/BIOS (`/storage/roms`) — provavelmente expandida no 1º boot (`fs-resize.service`) |
+| p1 | 4.956.160 – 5.134.494 | 87 MiB | FAT32 | — | ROMs/BIOS (`/storage/roms`) — **não** é expandida no boot; 1ª entrada da MBR; montada por dispositivo (`mount_romfs.sh`, vfat utf8) |
 
 ## Configuração de fábrica relevante (`/storage/.config/emuelec/configs/emuelec.conf`)
 
@@ -42,7 +42,9 @@ Tamanho: 2.628.861.440 bytes (5.134.495 setores de 512 B) — tabela MBR (`0x815
 
 ## Observações
 
-- Tabela fora de ordem e extended começando no setor 1: layout típico de imagens Allwinner (PhoenixCard). **Não mexer na tabela.**
+- Tabela fora de ordem e extended começando no setor 1: layout típico de imagens Allwinner (PhoenixCard). **Não mexer na tabela**, exceto o tamanho da p1 (última partição), que o `03-build.sh --roms` estica.
+- Há também uma tabela **sunxi-mbr** (`softw411`) a 20 MiB do início (partições relativas ao setor 40.960); a `UDISK` (= p1) tem `len=0`, ou seja, "até o fim do disco".
+- `fs-resize` só roda se existir `/flash/.please_resize_me` (não existe) e, nesse caso, **reformata a p8** — não mexe na p1.
 - `init.log` registra `fsck.auto: No such file or directory` — o fsck do /storage não roda no boot.
 - No SYSTEM, `lib`/`bin`/`sbin` são symlinks **absolutos**; ao inspecionar pelo WSL use sempre `usr/lib`, `usr/bin`.
 
